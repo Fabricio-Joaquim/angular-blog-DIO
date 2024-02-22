@@ -1,9 +1,5 @@
-<div class="container__menu-bar">
-  <ul>
-    <li><a href="https://www.linkedin.com/in/flora-martins-299631a3/">Linkedin</a></li>
-    <li><span>•</span></li>
-    <li><a href="https://github.com/codefloracode">Github</a></li>
-    <li><span>•</span></li>
-    <li><a href="https://www.instagram.com/hiimf/">Instagram</a></li>
+  <ul class="flex flex-row">
+    <li *ngFor="let menu of menuItems" class="mr-5 list-none">
+      <a [routerLink]="menu.link" routerLinkActive="active">{{ menu.name }}</a>
+    </li>
   </ul>
-</div>
